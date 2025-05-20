@@ -3,6 +3,7 @@ import Link from "next/link"
 import courseData from "../data/music_courses.json"
 import { BackgroundGradient } from "./ui/background-gradient"
 
+// create an interface for the course data
 interface Course{
     id: number,
     title: string,
@@ -10,8 +11,7 @@ interface Course{
     description: string,
     price: number,
     instructor: string,
-    isFeatured: boolean,
-        
+    isFeatured: boolean, 
 }
 
 function FeaturedCourses() {
